@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.along.exercise2.ChangeTitleActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_alignTop="@+id/editText"
+         />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/iv1"
+        android:layout_toEndOf="@+id/iv1"
+        app:srcCompat="@android:color/holo_purple" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/iv1"
+        android:layout_toEndOf="@+id/iv2"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/iv1"
+        app:srcCompat="@android:color/holo_blue_light" />
+
+    <ImageView
+        android:id="@+id/iv5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/iv4"
+        android:layout_toEndOf="@+id/iv4"
+        app:srcCompat="@android:color/holo_green_dark" />
+
+    <ImageView
+        android:id="@+id/iv6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/iv4"
+        android:layout_toEndOf="@+id/iv5"
+        app:srcCompat="@android:color/holo_green_light" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv4"
+        android:layout_below="@+id/iv4"
+        android:layout_marginTop="20dp"
+        android:text="SAVE" />
+
+
+</RelativeLayout>
